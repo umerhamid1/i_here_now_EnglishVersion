@@ -57,6 +57,11 @@ class SeriesTableViewController: UITableViewController {
             nav?.barTintColor = AppColors.shared.ColorOne()
             
             
+            
+            let textAttributes = [NSAttributedString.Key.foregroundColor:UIColor.white]
+            navigationController?.navigationBar.titleTextAttributes = textAttributes
+
+            
             //QUICK FIX
             //Add Right Button
             var informationButton:UIBarButtonItem = UIBarButtonItem(title: "", style: UIBarButtonItem.Style.plain,target:self, action:#selector(self.informationButtonClicked(sender:)))
